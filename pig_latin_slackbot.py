@@ -17,7 +17,7 @@ def piglatin_text(original):
     if original and original.isalpha():
         word = original.lower()
         first = word[0]
-        if first == ('a' or 'e' or 'i' or 'o' or 'u'):
+        if first in 'aeiou':
             new_word = word + pyg
             return new_word
         new_word = word[1:] + first + pyg
